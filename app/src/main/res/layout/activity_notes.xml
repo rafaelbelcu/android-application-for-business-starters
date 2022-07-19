@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround3"
+    tools:context=".Notes">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:background="#BD2B2B"
+        android:minHeight="?actionBarSize"
+        android:theme="?actionBarTheme">
+
+        <ImageView
+            android:id="@+id/noteimageView"
+            android:layout_width="75dp"
+            android:layout_height="82dp"
+            app:srcCompat="@drawable/note_icon" />
+
+        <TextView
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/serif"
+            android:text="NOTES"
+            android:textColor="#FCFDFF"
+            android:textSize="45sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/addimageView"
+            android:layout_width="90dp"
+            android:layout_height="82dp"
+            android:onClick="addaNote"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/add_icon" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/noteLV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:dividerHeight="6dp"
+        android:divider="#386ABA"/>
+
+</LinearLayout>

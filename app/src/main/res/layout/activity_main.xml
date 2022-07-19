@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="314dp"
+        android:layout_height="245dp"
+        android:background="#237285A5"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="337dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="11dp"
+        android:background="#54424649"
+        android:fontFamily="@font/lobstertwo_bolditalic"
+        android:gravity="center"
+        android:text="@string/your_guide_to_starting_your_own_business"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:indeterminateTint="#3399ff"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/emailAdress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slogan"
+        app:layout_constraintVertical_bias="0.93"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/emailAdress"
+        android:layout_width="344dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="2dp"
+        android:autofillHints="Type in your email adress"
+        android:background="@android:color/white"
+        android:ems="13"
+        android:gravity="center"
+        android:hint="@string/type_in_your_email_adress"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="344dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="34dp"
+        android:autofillHints="Type in your Password"
+        android:background="@android:color/white"
+        android:ems="13"
+        android:gravity="center"
+        android:hint="@string/type_in_your_password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailAdress" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="339dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#3092F4"
+        android:text="@string/sign_in"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/createAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2C7285A5"
+        android:fontFamily="@font/serif"
+        android:text="@string/register"
+        android:textColor="#F6F6F6"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInButton"
+        app:layout_constraintVertical_bias="0.30" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

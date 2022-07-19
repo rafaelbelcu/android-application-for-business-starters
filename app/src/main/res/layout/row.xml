@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/businessdevTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/serif"
+            android:padding="15dp"
+            android:text="Business Environment "
+            android:textColor="#133659"
+            android:textSize="27sp"
+            android:background="#FFFDFEFF"
+            android:textStyle="bold|italic" />
+
+        <RelativeLayout
+            android:id="@+id/expandablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/businessdevDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#B5FFFFFF"
+                android:fontFamily="@font/serif_regular"
+                android:padding="12dp"
+                android:text="Description"
+                android:textColor="#0B1F33"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

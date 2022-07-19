@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround3"
+    tools:context=".Calculator">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fiscalitycardview"
+        android:layout_width="390dp"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="260dp"
+            android:layout_height="105dp"
+            android:fontFamily="@font/serif"
+            android:paddingStart="13dp"
+            android:paddingTop="2dp"
+            android:text="   Access the taxes a company is required to pay in Romania"
+            android:textColor="#183F67"
+            android:textSize="24.9sp"
+            android:textStyle="italic|bold" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="113dp"
+            android:layout_height="103dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/atm_icon" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="370dp"
+        android:layout_height="330dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculations"
+        app:layout_constraintVertical_bias="0.83">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/clearBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonclearButton"
+                android:text="@string/clear"
+                android:textColor="@color/white"
+                android:textSize="27sp" />
+
+            <Button
+                android:id="@+id/paranthesesBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonparenthesisButton"
+                android:text="@string/parentheses"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/exponentBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonexpButton"
+                android:text="@string/exponent"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/divideBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickondivideButton"
+                android:text="@string/divide"
+                android:textColor="@color/white"
+                android:textSize="27sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/sevenBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonsevenButton"
+                android:text="@string/seven"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/eightBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickoneightButton"
+                android:text="@string/eight"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/nineBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonnineButton"
+                android:text="@string/nine"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/multiplyBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonmultiplyButton"
+                android:text="@string/multiply"
+                android:textColor="@color/white"
+                android:textSize="29sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/fourBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonfourButton"
+                android:text="@string/four"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/fiveBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonfiveButton"
+                android:text="@string/five"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/sixBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonsixButton"
+                android:text="@string/six"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/subtractBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonsubtractButton"
+                android:text="@string/subtract"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/oneBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickononeButton"
+                android:text="@string/one"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/twoBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickontwoButton"
+                android:text="@string/two"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/threeBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonthreeButton"
+                android:text="@string/three"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/addBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonaddButton"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="29sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/plusMinusBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonplusMinusButton"
+                android:text="@string/plusMinus"
+                android:textColor="@color/white"
+                android:textSize="29sp" />
+
+            <Button
+                android:id="@+id/zeroBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonzeroButton"
+                android:text="@string/zero"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/pointBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonpointButton"
+                android:text="@string/point"
+                android:textColor="@color/white"
+                android:textSize="27sp" />
+
+            <Button
+                android:id="@+id/equalsBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorstyles"
+                android:fontFamily="@font/serif_regular"
+                android:onClick="clickonequalButton"
+                android:text="@string/equals"
+                android:textColor="@color/white"
+                android:textSize="29sp" />
+
+        </TableRow>
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/calculations"
+        android:layout_width="348dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="188dp"
+        android:layout_weight="1"
+        android:autofillHints="false"
+        android:fontFamily="@font/serif"
+        android:inputType="none"
+        android:text="@string/displaycalculation"
+        android:textAlignment="textEnd"
+        android:textColor="#133353"
+        android:textSize="33sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
+
+    <ImageButton
+        android:id="@+id/backspaceBTN"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/calculatorstyles"
+        android:contentDescription="@drawable/calculatorbutton"
+        android:onClick="clickonbackspaceButton"
+        android:text="@string/backspace"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/calculatorbutton" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="370dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="1dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toTopOf="@+id/calculations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fiscalitycardview"
+        app:layout_constraintVertical_bias="0.65999997">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="360dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/serif"
+            android:paddingStart="1dp"
+            android:paddingTop="2dp"
+            android:text="Access the current taxes values"
+            android:textAlignment="center"
+            android:textColor="#183F67"
+            android:textSize="23sp"
+            android:textStyle="italic|bold" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

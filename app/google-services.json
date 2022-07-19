@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "632847900990",
+    "project_id": "businessio-app",
+    "storage_bucket": "businessio-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632847900990:android:4eacf1700f1c0ffecfcc6f",
+        "android_client_info": {
+          "package_name": "com.example.belcurafaelstefanapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632847900990-r8onuc75sv86lgmbh92plrhhfaeq4m84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEzYCPL5qeqeavxmm0En0NCfsp2H0wXIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632847900990-r8onuc75sv86lgmbh92plrhhfaeq4m84.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

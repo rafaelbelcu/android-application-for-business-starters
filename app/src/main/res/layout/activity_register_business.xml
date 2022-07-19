@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterBusiness">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="132dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/onrc_logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="242dp"
+            android:layout_height="113dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="@font/serif"
+            android:text="Companies can be founded by natural or legal entities and must be registered at the National Trade Register Office."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="359dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/serif"
+            android:text="  For establishing a company in Romania, the following steps must be checked:"
+            android:textColor="@color/black"
+            android:textSize="17.3sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.692"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="369dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/playfairdisplay"
+            android:text="    The name of the future company must be reserved, after checking its availability on the National Trade Register website. Furthermore, the legal form of the company specification, along with three original company logos, proof of fees payment, around 16 euros, are required."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.714"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="107dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="436dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bank_icon" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="272dp"
+            android:layout_height="174dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/playfairdisplay"
+            android:text="    Secondly, it is necessary to open a bank account. Thus, the following documents are needed: a company name availability certificate, statutory provisions and proof of address for the company's office."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.913"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_marginTop="620dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/register_icon" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="241dp"
+            android:layout_height="193dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/playfairdisplay"
+            android:text="   The next step is to register the company to the National Trade Register. The required documents are represented by: the company bylaws, corporate account, documentation for company headquarters,"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="354dp"
+            android:layout_height="48dp"
+            android:fontFamily="@font/playfairdisplay"
+            android:text="specimen of signature, affidavits and declaration from company founders."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="240dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:text="For more details click here to visit the ONRC website"
+            android:textColor="#3A5348"
+            android:textSize="18.5dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:srcCompat="@drawable/click_icon" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="343dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            app:srcCompat="@drawable/onrclogo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

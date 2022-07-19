@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround"
+    tools:context=".UserRegistration">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="314dp"
+        android:layout_height="245dp"
+        android:background="#237285A5"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="337dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="6dp"
+        android:background="#54424649"
+        android:fontFamily="@font/lobstertwo_bolditalic"
+        android:gravity="center"
+        android:text="@string/your_guide_to_starting_your_own_business"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="65dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="0dp"
+        android:indeterminateTint="#3399ff"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/emailAdress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slogan"
+        app:layout_constraintVertical_bias="0.93"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="0dp"
+        android:autofillHints="Type in your username"
+        android:background="@android:color/white"
+        android:ems="12"
+        android:gravity="center"
+        android:hint="@string/type_in_your_username"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/emailadress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <EditText
+        android:id="@+id/emailadress"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="21dp"
+        android:autofillHints="pass"
+        android:background="@android:color/white"
+        android:ems="12"
+        android:gravity="center"
+        android:hint="@string/type_in_your_email_adresss"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="21dp"
+        android:autofillHints="Type in your Password"
+        android:background="@android:color/white"
+        android:ems="12"
+        android:gravity="center"
+        android:hint="@string/type_in_your_password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailadress" />
+
+    <Button
+        android:id="@+id/userRegistrationButton"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3092F4"
+        android:text="@string/register_now"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2C7285A5"
+        android:text="@string/signIn"
+        android:fontFamily="@font/serif"
+        android:textColor="#F6F6F6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userRegistrationButton"
+        app:layout_constraintVertical_bias="0.215" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

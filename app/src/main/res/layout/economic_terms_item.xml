@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:elevation="55dp"
+    app:cardCornerRadius="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/economicterm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#FCFDFD"
+            android:padding="7dp"
+            android:fontFamily="@font/serif"
+            android:text="@string/economics_a_z_terms"
+            android:textColor="#093355"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/termdefinition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/economicterm"
+            android:background="#1C4775"
+            android:fontFamily="@font/elmessiri_regular"
+            android:padding="14dp"
+            android:text="@string/definition"
+            android:textColor="#FFFFFF"
+            app:autoSizeTextType= "uniform" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

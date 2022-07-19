@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.belcurafaelstefanapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BelcuRafaelStefanApplication">
+        <activity android:name=".Json"></activity>
+        <activity
+            android:name=".Calculator"
+            android:theme="@style/CalculatorTheme" />
+        <activity
+            android:name=".NotesExtended"
+            android:theme="@style/NotesTheme"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".Notes"
+            android:theme="@style/NotesTheme"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".EconomicTermsDictionary"
+            android:theme="@style/DictionaryTheme" />
+        <activity
+            android:name=".RegisterBusiness"
+            android:theme="@style/RegisterBusinessTheme" />
+        <activity
+            android:name=".BusinessDevelopment"
+            android:theme="@style/BusinessDevelopmentTheme" />
+        <activity
+            android:name=".Fiscality"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".Calendar"
+            android:theme="@style/CalendarTheme" />
+        <activity
+            android:name=".Menu"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".UserRegistration"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
